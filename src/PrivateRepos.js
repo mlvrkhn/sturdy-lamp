@@ -9,6 +9,7 @@ async function getRepos(filter) {
 
 export default function Repos() {
     const [reposList, setReposList] = useState([]);
+    console.log('respi');
 
     useEffect(() => {
         getRepos('task-html').then(
@@ -16,9 +17,11 @@ export default function Repos() {
     }, []);
 
     return (
+        <>
+        <h3>MyListHere</h3>
         <ul>
-            lista
             {reposList.map((repo, i) => <li key={`repo-${i}`}>{repo.name}</li>)}
         </ul>
+        </>
     )
 }
