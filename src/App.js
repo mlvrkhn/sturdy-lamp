@@ -10,6 +10,7 @@ function App() {
         <PrivateRepos />
         <p>
             <small>v{process.env.REACT_APP_VERSION}</small></p>
+            { console.log('process.env.GH_TOKEN', process.env) }
         <a
           className="App-link"
           href="https://devmentor.pl"

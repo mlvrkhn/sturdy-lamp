@@ -17,6 +17,7 @@ export default function Repos() {
 
     return (
         <ul>
+            lista
             {reposList.map((repo, i) => <li key={`repo-${i}`}>{repo.name}</li>)}
         </ul>
     )
